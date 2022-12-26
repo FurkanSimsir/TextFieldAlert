@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import SwiftUI
 import UIKit
 import Combine
@@ -40,3 +41,4 @@ extension UITextField {
             .eraseToAnyPublisher()
     }
 }
+#endif

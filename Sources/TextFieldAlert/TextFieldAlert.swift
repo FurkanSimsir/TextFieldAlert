@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import SwiftUI
 
 /// A model that describes a control that displays an alert with text fields.
@@ -128,3 +129,4 @@ extension TextFieldAlert: UIViewControllerRepresentable {
         }
     }
 }
+#endif

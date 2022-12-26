@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import SwiftUI
 
 struct TextFieldWrapper<PresentingView: View>: View {
@@ -16,3 +17,4 @@ struct TextFieldWrapper<PresentingView: View>: View {
         }
     }
 }
+#endif
