@@ -7,18 +7,18 @@ let package = Package(
     platforms: [
         .iOS(.v13),
         .tvOS(.v13),
-        .macOS(.v12)
+        .macOS(.v12),
     ],
     products: [
         .library(
             name: "TextFieldAlert",
             targets: ["TextFieldAlert"]
-        )
+        ),
     ],
     targets: [
         .target(
             name: "TextFieldAlert",
             dependencies: []
-        )
+        ),
     ]
 )

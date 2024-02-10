@@ -3,24 +3,24 @@ import TextFieldAlert
 
 struct ExampleView: View {
     @StateObject var viewModel = ExampleViewModel()
-    
+
     var body: some View {
         VStack {
             Spacer()
             Spacer()
-            
+
             Button {
                 viewModel.presentSignInAlert()
             } label: {
                 Text("Sign in")
             }
-            
+
             Spacer()
             Spacer()
-            
+
             Text("Mail: \(viewModel.mail)")
             Text("Password: \(viewModel.password)")
-            
+
             Spacer()
         }
         .textFieldAlert(
@@ -38,7 +38,7 @@ struct ExampleView: View {
                     placeholder: "Password (5 characters or more)",
                     isSecureTextEntry: true,
                     autocapitalizationType: .none
-                )
+                ),
             ],
             actions: [
                 .init(
@@ -51,7 +51,7 @@ struct ExampleView: View {
                     closure: { _ in
                         viewModel.signIn()
                     }
-                )
+                ),
             ],
             isPresented: $viewModel.isPresented
         )
